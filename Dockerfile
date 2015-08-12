@@ -97,7 +97,7 @@ USER $EJABBERD_USER
 # Set workdir to ejabberd root
 WORKDIR $EJABBERD_HOME
 
-VOLUME ["$EJABBERD_HOME/database", "$EJABBERD_HOME/ssl"]
+VOLUME ["$EJABBERD_HOME/database", "$EJABBERD_HOME/ssl", "$EJABBERD_HOME/conf"]
 EXPOSE 4560 5222 5269 5280
 
 CMD ["start"]
